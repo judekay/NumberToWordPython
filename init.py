@@ -1,6 +1,9 @@
-import NumberToWord as notoword
+from NumberToWord import NumberToWord
 
-numbertoword = notoword.NumberToWord()
-input_value = raw_input("Enter the number to convert")
-print(" ")
-print(numbertoword.ConvertToWord(input_value))
+numbertoword = NumberToWord()
+
+input_value = raw_input("Enter the number to convert: \n")
+word = numbertoword.ConvertToWord(input_value)
+
+print ("Your number expressed in words is:\n")
+print (word)
